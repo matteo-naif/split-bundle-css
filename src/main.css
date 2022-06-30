@@ -3,6 +3,9 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+.container {
+    @apply max-w-xl mx-auto px-6;
+}
 .header {
     @apply bg-red-50 sm:bg-red-100 md:bg-red-200 lg:bg-red-300 xl:bg-red-400;
 }
