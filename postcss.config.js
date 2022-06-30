@@ -7,8 +7,7 @@ module.exports = (ctx) => ({
 		'postcss-for': {},
 		'postcss-simple-vars': {},
 		'postcss-100vh-fix': true,
-		autoprefixer: ctx.env === 'production' ? {} : false,
-		cssnano: ctx.env === 'production' ? {} : false,
+		autoprefixer: true,
 		'postcss-extract-media-query': {
 			// false: extract only specified queries, not specified queries fallback to main
 			// true: extract all the query found in the file
@@ -24,7 +23,13 @@ module.exports = (ctx) => ({
 			output: {
 				path: 'dist', // emit to 'dist' folder in root
 				name: '[name]-[query].[ext]' // pattern of emited files
+			},
+			config: {
+				plugins: {
+					'cssnano': true
+				}
 			}
-		}
+		},
+		cssnano: true,
 	}
 });
