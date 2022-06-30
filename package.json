@@ -1,0 +1,31 @@
+{
+  "name": "split-bundle-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+		"clean": "rm -rf dist/*",
+    "create-empty-css": "touch dist/main-2xl.css  dist/main-xl.css  dist/main-lg.css  dist/main-md.css  dist/main-sm.css",
+    "styles": "postcss src/main.css -o dist/main.css --verbose --map",
+    "start": "npm run clean && npm run create-empty-css && npm run styles"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "postcss": "^8.4.14",
+    "postcss-100vh-fix": "^1.0.2",
+    "postcss-cli": "^9.1.0",
+    "postcss-for": "^2.1.1",
+    "postcss-import": "^14.1.0",
+    "postcss-scss": "^4.0.4",
+    "postcss-simple-vars": "^6.0.3",
+    "postcss-extract-media-query": "^3.0.0"
+  },
+  "dependencies": {
+    "@evoluzione/tailwind-config": "^1.0.12",
+    "autoprefixer": "^10.4.7",
+    "cssnano": "^5.1.12",
+    "tailwindcss": "^3.1.4"
+  }
+}

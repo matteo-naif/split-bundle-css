@@ -1,0 +1,14 @@
+
+@media (min-width: 640px) {
+    .header {
+        --tw-bg-opacity: 1;
+        background-color: rgb(254 226 226 / var(--tw-bg-opacity))
+    }
+}
+
+@media (min-width: 640px) {
+    .footer {
+        --tw-bg-opacity: 1;
+        background-color: rgb(207 250 254 / var(--tw-bg-opacity))
+    }
+}

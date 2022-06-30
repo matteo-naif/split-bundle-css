@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Bundle CSS</title>
+
+    <link href="dist/main.css" rel="stylesheet">
+    <link href="dist/main-sm.css" media="(min-width: 640px)" rel="stylesheet">
+    <link href="dist/main-md.css" media="(min-width: 768px)" rel="stylesheet">
+    <link href="dist/main-lg.css" media="(min-width: 1024px)" rel="stylesheet">
+    <link href="dist/main-xl.css" media="(min-width: 1280px)" rel="stylesheet">
+    <link href="dist/main-2xl.css" media="(min-width: 1536px)" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="title">Split bundle css</h1>
+
+        <p>Checkout the loading of the CSS.</p>
+
+        <hr class="my-6 md:my-8 lg:my-12">
+
+        <div class="header padding-custom">
+            Header
+        </div>
+        <div class="footer padding-custom">
+            footer
+        </div>
+
+    </div>
+
+</body>
+
+</html>
