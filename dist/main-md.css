@@ -1,5 +1,11 @@
 
 @media (min-width: 768px) {
+    .container {
+        max-width: 768px
+    }
+}
+
+@media (min-width: 768px) {
     .header {
         --tw-bg-opacity: 1;
         background-color: rgb(254 202 202 / var(--tw-bg-opacity))
